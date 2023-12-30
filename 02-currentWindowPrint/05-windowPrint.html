@@ -1,0 +1,78 @@
+
+<!-- Write a JavaScript program to print the current window contents. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WindowContentsPrint</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0003 , #000);
+        }
+        #box
+        {
+            height: 200px;
+            width: 400px;
+            background: linear-gradient(135deg, #000, #0003);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1vw;
+        }
+        #box p 
+        {
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            /* background:linear-gradient(135deg, #95877a, #e4d5c7, #6ab29b); */
+        }
+        #box button 
+        {
+            padding: 0.6vw;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0px 0px  5px #ccc, inset 0px 0px  15px #000 ;
+            color: #000;
+            font-family: 'Poppins',sans-serif;
+            font-size: 10px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="box">
+    <p>Click the button to print the current page.</p>
+
+    <!-- firts method  -->
+    <button onclick="print()" >Print this page</button>
+
+    <!-- another method is  -->
+    <!-- <button onclick="printPage()">Print this page</button>  -->
+
+    </div>
+
+    <script>
+        function printPage()
+        {
+            window.print();
+        }
+    </script>
+
+</body>
+</html>
+

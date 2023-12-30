@@ -1,0 +1,40 @@
+<!--
+write a program for a Counter Application using HTML +  CSS + JS and the knowledge of (JavaScript DOM).
+=> create a counter app with three buttons. 
+=> (1) one Button add (+1) each time
+=> (2) one Button subtract (-1) each time
+=> (3) they pressed and one to resst the counter 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CounterApp</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+<div id="printWindow">
+    <button onclick="currentWindowPrint()">Print</button>
+</div>
+
+<div id="container">
+    <div id="appCard">
+        <div class="elem1">
+            <h2>Counter App</h2>
+        </div>
+        <div class="elem2">
+            <button class="addOneButton" onclick="increaseValueByOne()">Increament By 1</button>
+            <span class="displayOperation">0</span>
+            <button class="subtractOneButton" onclick="decreaseValueByOne()">Decrement By 1</button>
+        </div>
+        <div class="elem3">
+            <button class="resetValue" onclick="restValue()" > Reset value</button>
+        </div>
+    </div>
+</div>
+<script src="./App.js"></script>
+
+</body>
+</html>

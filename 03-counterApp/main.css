@@ -1,0 +1,109 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+html,body
+{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #f4a2a2, #7b5757,#7aa7a7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#printWindow
+{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+#printWindow button
+{
+    padding:5px 20px;
+    border: none;
+    border-radius:5px;
+    font-size: 13px;
+    font-weight: 500;
+    color:#ffffff;
+    background: #0000006d;
+    box-shadow: 0 0 5px 1px #00000033;
+}
+#container 
+{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#appCard
+{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vw;
+    background-color:#ffffff10 ;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px #00000033;
+}
+@media (max-width:425px) {
+    #appCard
+    {
+        padding: 8vw 0;
+        width: 90%;
+        justify-content: space-between;
+        height: 30vh;
+    }
+}
+.elem2
+{
+    position: relative;
+    height: 50px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+.elem2 .addOneButton, .subtractOneButton, .displayOperation, .resetValue
+{
+    padding: 0.9vw 1.2vw;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+.displayOperation
+{
+    padding: .5vw 1.5vw;
+}
+@media (max-width:425px)
+{
+    .elem2
+    {
+        padding: 0 1vw;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .elem2 .addOneButton, .subtractOneButton, .displayOperation, .resetValue
+    {
+        padding:10px 10px;
+    }
+    .displayOperation
+    {
+        padding: 10px 14px;
+    }
+}
+
+.displayOperation{background: #0000003b;}
+.addOneButton{ background:#91d79157;}
+.subtractOneButton{background:  #da4f4f57 ; }
+.resetValue{background: #2731317b;}
+
