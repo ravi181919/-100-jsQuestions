@@ -3,7 +3,8 @@ write a program for a Counter Application using HTML +  CSS + JS and the knowled
 => create a counter app with three buttons. 
 => (1) one Button add (+1) each time
 => (2) one Button subtract (-1) each time
-=> (3) they pressed and one to resst the counter 
+=> (3) they pressed and one to resst the counter
+=> (4) Current Window print button for (save as PDF and PrintOut of Current counting).
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -15,26 +16,31 @@ write a program for a Counter Application using HTML +  CSS + JS and the knowled
 </head>
 <body>
 
+    <!-- current window print button -->
 <div id="printWindow">
     <button onclick="currentWindowPrint()">Print</button>
 </div>
 
+    <!-- main container, it's hold all the code -->  
 <div id="container">
-    <div id="appCard">
+    
+    <div id="appCard"> 
         <div class="elem1">
             <h2>Counter App</h2>
         </div>
+        
         <div class="elem2">
             <button class="addOneButton" onclick="increaseValueByOne()">Increament By 1</button>
             <span class="displayOperation">0</span>
             <button class="subtractOneButton" onclick="decreaseValueByOne()">Decrement By 1</button>
         </div>
+        
         <div class="elem3">
             <button class="resetValue" onclick="restValue()" > Reset value</button>
-        </div>
+        </div>  
     </div>
+    
 </div>
 <script src="./App.js"></script>
-
 </body>
 </html>
