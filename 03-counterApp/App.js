@@ -4,8 +4,6 @@ function currentWindowPrint()
     window.print()
 }
 
-
-
 // function for Increase value by 1, and counting up to 1000
 function increaseValueByOne(){
     const andOneDisplay = document.querySelector('.displayOperation')
